@@ -25,7 +25,7 @@ function Contact(props) {
 Contact.propTypes = {
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    online: PropTypes.bool.isRequired,   
+    online: PropTypes.bool,   
   };
 
 
