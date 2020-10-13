@@ -9,7 +9,7 @@ function Contact(props) {
 
     return(
         <div className='Contact'>
-            <img className= "avatar" src= {props.img} alt= {props.alt} />
+            <img className= "avatar" src={props.img} alt={props.name} />
             <div>
             <p className="name">{props.name}</p>
                 <div className="status">
@@ -24,7 +24,6 @@ function Contact(props) {
 
 Contact.propTypes = {
     img: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     online: PropTypes.bool.isRequired,   
   };
