@@ -33,7 +33,7 @@ const ContactList = () => {
 
     return <div className="ContactList">
         {users.map((user) => {
-            return <Contact name={user.name}
+            return <Contact key={user.name} name={user.name}
                             avatar={user.avatar}
                             online={user.online}/>
         })}
